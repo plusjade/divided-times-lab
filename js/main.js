@@ -40,50 +40,27 @@ $(document).ready(function() {
         $('#primary-nav li').not('.' + name).removeClass('active');
     }
 
-    // When international is clicked I want to show the international section.
-    $('#primary-nav .international').click(function(e) {
+    $('#primary-nav li').click(function(e) {
         e.preventDefault();
-        toggleSectionByName('international');
 
-        $(this).toggleClass('active');
-    })
-
-    // politics
-    $('#primary-nav .politics').click(function(e) {
-        e.preventDefault();
-        toggleSectionByName('politics');
-
-        $(this).toggleClass('active');
-    })
-
-    // business
-    $('#primary-nav .business').click(function(e) {
-        e.preventDefault();
-        toggleSectionByName('business');
-
-        $(this).toggleClass('active');
-    })
-
-    // technology
-    $('#primary-nav .technology').click(function(e) {
-        e.preventDefault();
-        toggleSectionByName('technology');
-
-        $(this).toggleClass('active');
-    })
-
-    // culture
-    $('#primary-nav .culture').click(function(e) {
-        e.preventDefault();
-        toggleSectionByName('culture');
-
-        $(this).toggleClass('active');
-    })
-
-    // blogs
-    $('#primary-nav .blogs').click(function(e) {
-        e.preventDefault();
-        toggleSectionByName('blogs');
+        if( $(this).hasClass('international') ) {
+            toggleSectionByName('international');
+        }
+        else if( $(this).hasClass('politics') ) {
+            toggleSectionByName('politics');
+        }
+        else if( $(this).hasClass('business') ) {
+            toggleSectionByName('business');
+        }
+        else if( $(this).hasClass('technology') ) {
+            toggleSectionByName('technology');
+        }
+        else if( $(this).hasClass('culture') ) {
+            toggleSectionByName('culture');
+        }
+        else if( $(this).hasClass('blogs') ) {
+            toggleSectionByName('blogs');
+        }
 
         $(this).toggleClass('active');
     })
