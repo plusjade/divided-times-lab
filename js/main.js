@@ -10,6 +10,6 @@ $(document).ready(function() {
         e.preventDefault();
 
         // all sections already have ids so I'll just use that.
-        $('#international-drop').slideDown(150);
+        $('#international-drop').slideToggle(150);
     })
 });
