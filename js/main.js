@@ -36,6 +36,8 @@ $(document).ready(function() {
             // all sections already have ids so I'll just use that.
             $('#' + name + '-drop').slideToggle(150);
         }
+
+        $('#primary-nav li').not('.' + name).removeClass('active');
     }
 
     // When international is clicked I want to show the international section.
@@ -43,7 +45,6 @@ $(document).ready(function() {
         e.preventDefault();
         toggleSectionByName('international');
 
-        $('#primary-nav li').not('.international').removeClass('active');
         $(this).toggleClass('active');
     })
 
