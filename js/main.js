@@ -52,29 +52,39 @@ $(document).ready(function() {
     $('#primary-nav .politics').click(function(e) {
         e.preventDefault();
         toggleSectionByName('politics');
+
+        $(this).toggleClass('active');
     })
 
     // business
     $('#primary-nav .business').click(function(e) {
         e.preventDefault();
         toggleSectionByName('business');
+
+        $(this).toggleClass('active');
     })
 
     // technology
     $('#primary-nav .technology').click(function(e) {
         e.preventDefault();
         toggleSectionByName('technology');
+
+        $(this).toggleClass('active');
     })
 
     // culture
     $('#primary-nav .culture').click(function(e) {
         e.preventDefault();
         toggleSectionByName('culture');
+
+        $(this).toggleClass('active');
     })
 
     // blogs
     $('#primary-nav .blogs').click(function(e) {
         e.preventDefault();
         toggleSectionByName('blogs');
+
+        $(this).toggleClass('active');
     })
 });
