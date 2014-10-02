@@ -42,6 +42,9 @@ $(document).ready(function() {
     $('#primary-nav .international').click(function(e) {
         e.preventDefault();
         toggleSectionByName('international');
+
+        $('#primary-nav li').removeClass('active');
+        $(this).addClass('active');
     })
 
     // politics
