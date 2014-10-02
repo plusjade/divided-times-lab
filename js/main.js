@@ -9,6 +9,7 @@ $(document).ready(function() {
     $('#primary-nav .international').click(function(e) {
         e.preventDefault();
 
+        $('#slide-down section').hide();
         // all sections already have ids so I'll just use that.
         $('#international-drop').slideToggle(150);
     })
@@ -17,6 +18,7 @@ $(document).ready(function() {
     $('#primary-nav .politics').click(function(e) {
         e.preventDefault();
 
+        $('#slide-down section').hide();
         $('#politics-drop').slideToggle(150);
     })
 
@@ -24,6 +26,7 @@ $(document).ready(function() {
     $('#primary-nav .business').click(function(e) {
         e.preventDefault();
 
+        $('#slide-down section').hide();
         $('#business-drop').slideToggle(150);
     })
 
@@ -31,6 +34,7 @@ $(document).ready(function() {
     $('#primary-nav .technology').click(function(e) {
         e.preventDefault();
 
+        $('#slide-down section').hide();
         $('#technology-drop').slideToggle(150);
     })
 
@@ -38,6 +42,7 @@ $(document).ready(function() {
     $('#primary-nav .culture').click(function(e) {
         e.preventDefault();
 
+        $('#slide-down section').hide();
         $('#culture-drop').slideToggle(150);
     })
 
@@ -45,6 +50,7 @@ $(document).ready(function() {
     $('#primary-nav .blogs').click(function(e) {
         e.preventDefault();
 
+        $('#slide-down section').hide();
         $('#blogs-drop').slideToggle(150);
     })
 });
