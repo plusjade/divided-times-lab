@@ -43,8 +43,8 @@ $(document).ready(function() {
         e.preventDefault();
         toggleSectionByName('international');
 
-        $('#primary-nav li').removeClass('active');
-        $(this).addClass('active');
+        $('#primary-nav li').not('.international').removeClass('active');
+        $(this).toggleClass('active');
     })
 
     // politics
